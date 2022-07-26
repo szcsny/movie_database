@@ -52,7 +52,9 @@ async function searchForMovies(){
 }
 
 function setStorage(id){
-    console.log(myStorage)
+    if(!myStorage){
+        return;
+    }
     for(let i=0; i<myStorage.length; i++){
         if(myStorage[i] === id){
             return;
