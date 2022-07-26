@@ -1,0 +1,181 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #202020;
+    text-align: center;
+}
+
+body {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    color: #fff;
+    height: 30vh;
+    background-image: url("images/THJJRUhNlEc.png");
+    background-color: #000;
+    background-blend-mode: screen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header > a:hover,
+header > a:focus {
+    color: #aaa;
+}
+
+form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 27vh;
+    margin: 0 auto;
+    width: 310px;
+    display: flex;
+    justify-content: center;
+}
+
+#search-icon {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+#search-field {
+    padding: .5em 1em .5em 2em;
+    margin-left: 2.3em;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #D1D5DB;
+}
+
+#submit-btn {
+    margin: 0 0 0 -.4em;
+    padding: .5em 1em;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid #D1D5DB;
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+    background-color: #D1D5DB;
+    cursor: pointer;
+}
+
+#search-field:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+#movies-div {
+    min-height: 70vh;
+    color: #dfdddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#movie-icon {
+    font-size: 70px;
+}
+
+#movies-div > a {
+    line-height: 10vh;
+    display: flex;
+    align-items: center;
+    color: #202020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#movies-div > a > span {
+    margin-right: 10px;
+}
+
+.movie-card {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    color: #202020;
+    margin-top: 2em;
+    width: 550px;
+    text-align: justify;
+    border-bottom: 1px solid #D1D5DB;
+    padding-bottom: 2em;
+    font-size: .8rem;
+}
+
+.movie-card:nth-child(1){
+    margin-top: 5em;
+}
+
+.movie-card:last-child{
+    border: none;
+}
+
+.movie-card > img {
+    width: 30%;
+}
+
+.movie-bio {
+    padding: 1em;
+    width: 100%;
+}
+
+.title-and-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-and-rating > h3 {
+    max-width: 85%;
+    text-align: left;
+}
+
+.rating {
+    font-weight: bold;
+    display: flex;
+    line-height: 2em;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-watchlist {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-to-watchlist:hover,
+.add-to-watchlist:focus {
+    color: #777;
+}
+
+.runtime,
+.genre {
+    font-size: 14px;
+}
+
