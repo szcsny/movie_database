@@ -52,14 +52,6 @@ async function searchForMovies(){
 }
 
 function setStorage(id){
-    if(!myStorage){
-        return;
-    }
-    for(let i=0; i<myStorage.length; i++){
-        if(myStorage[i] === id){
-            return;
-        }
-    }
     myStorage.push(id);
     localStorage.clear;
     localStorage.setItem('id', JSON.stringify(myStorage));
