@@ -52,8 +52,9 @@ async function searchForMovies(){
 }
 
 function setStorage(id){
-    for(let item of myStorage){
-        if(item == id){
+    console.log(myStorage)
+    for(let i=0; i<myStorage.length; i++){
+        if(myStorage[i] === id){
             return;
         }
     }
