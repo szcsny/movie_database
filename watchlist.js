@@ -8,7 +8,7 @@ function displayWatchlist(){
     if(myList && myList.length > 0){
         movieDiv.innerHTML = ``;
         for(let item of myList){
-            fetch(`http://www.omdbapi.com/?apikey=${myAPIkey}&i=${item}`)
+            fetch(`https://www.omdbapi.com/?apikey=${myAPIkey}&i=${item}`)
                 .then(res => res.json())
                 .then(data => {
 

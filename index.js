@@ -8,13 +8,13 @@ const movieDiv = document.getElementById("movies-div");
 
 async function searchForMovies(){
     let text = searchField.value;
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${myAPIkey}&s=${text}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${myAPIkey}&s=${text}`);
     const data = await response.json();
     movieDiv.innerHTML = ``;
     
     if(data.Search){
         for(let i=0; i<data.Search.length; i++){
-            const res = await fetch(`http://www.omdbapi.com/?apikey=${myAPIkey}&i=${data.Search[i].imdbID}`);
+            const res = await fetch(`https://www.omdbapi.com/?apikey=${myAPIkey}&i=${data.Search[i].imdbID}`);
             const movieData = await res.json();
             
             const {Title, Plot, Genre, Poster, Metascore, Runtime, imdbID, Type} = movieData;
